@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Chart - Dwarkesh Menswear</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-tshirt me-2"></i>Dwarkesh Menswear
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="orders.php">Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reviews.php">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="features.html">Size Chart</a>
+                    </li>
+                </ul>
+                <div class="ms-3">
+                    <a href="admin/login.php" class="btn btn-gold btn-sm">
+                        <i class="fas fa-user-shield me-2"></i>Admin Login
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="hero-section" style="min-height: 50vh;">
+        <div class="hero-overlay">
+            <div class="container">
+                <div class="row justify-content-center align-items-center" style="min-height: 50vh;">
+                    <div class="col-lg-8 text-center">
+                        <h1 class="hero-title animate-text">
+                            Size <span class="text-gold">Chart</span>
+                        </h1>
+                        <p class="hero-subtitle">Find your perfect fit with our comprehensive size guide</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Size Guide Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="size-guide-intro text-center mb-5">
+                        <h3 class="text-gold mb-3">How to Measure</h3>
+                        <p class="text-light">Use a measuring tape to get accurate measurements. For best results, measure over light clothing.</p>
+                    </div>
+                    
+                    <!-- Shirts Size Chart -->
+                    <div class="size-chart mb-5">
+                        <h3 class="text-center text-gold mb-4">
+                            <i class="fas fa-tshirt me-3"></i>Shirts Size Chart
+                        </h3>
+                        <div class="table-responsive">
+                            <table class="table size-table">
+                                <thead>
+                                    <style>
+    td {
+        color: black !important;
+    }
+</style>
+                                    <tr>
+                                        <th>Size</th>
+                                        <th>Chest (inches)</th>
+                                        <th>Waist (inches)</th>
+                                        <th>Length (inches)</th>
+                                        <th>Shoulder (inches)</th>
+                                        <th>Sleeve Length (inches)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>S</strong></td>
+                                        <td>36-38</td>
+                                        <td>30-32</td>
+                                        <td>26-27</td>
+                                        <td>16-17</td>
+                                        <td>23-24</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>M</strong></td>
+                                        <td>38-40</td>
+                                        <td>32-34</td>
+                                        <td>27-28</td>
+                                        <td>17-18</td>
+                                        <td>24-25</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>L</strong></td>
+                                        <td>40-42</td>
+                                        <td>34-36</td>
+                                        <td>28-29</td>
+                                        <td>18-19</td>
+                                        <td>25-26</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>XL</strong></td>
+                                        <td>42-44</td>
+                                        <td>36-38</td>
+                                        <td>29-30</td>
+                                        <td>19-20</td>
+                                        <td>26-27</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>XXL</strong></td>
+                                        <td>44-46</td>
+                                        <td>38-40</td>
+                                        <td>30-31</td>
+                                        <td>20-21</td>
+                                        <td>27-28</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Pants Size Chart -->
+                    <div class="size-chart mb-5">
+                        <h3 class="text-center text-gold mb-4">
+                            <i class="fas fa-socks me-3"></i>Pants Size Chart
+                        </h3>
+                        <div class="table-responsive">
+                            <table class="table size-table">
+                                <thead>
+                                    <tr>
+                                        <th>Size</th>
+                                        <th>Waist (inches)</th>
+                                        <th>Hip (inches)</th>
+                                        <th>Length (inches)</th>
+                                        <th>Thigh (inches)</th>
+                                        <th>Knee (inches)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>28</strong></td>
+                                        <td>28-30</td>
+                                        <td>36-38</td>
+                                        <td>32-33</td>
+                                        <td>20-21</td>
+                                        <td>14-15</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>30</strong></td>
+                                        <td>30-32</td>
+                                        <td>38-40</td>
+                                        <td>32-33</td>
+                                        <td>21-22</td>
+                                        <td>15-16</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>32</strong></td>
+                                        <td>32-34</td>
+                                        <td>40-42</td>
+                                        <td>33-34</td>
+                                        <td>22-23</td>
+                                        <td>16-17</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>34</strong></td>
+                                        <td>34-36</td>
+                                        <td>42-44</td>
+                                        <td>33-34</td>
+                                        <td>23-24</td>
+                                        <td>17-18</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>36</strong></td>
+                                        <td>36-38</td>
+                                        <td>44-46</td>
+                                        <td>34-35</td>
+                                        <td>24-25</td>
+                                        <td>18-19</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>38</strong></td>
+                                        <td>38-40</td>
+                                        <td>46-48</td>
+                                        <td>34-35</td>
+                                        <td>25-26</td>
+                                        <td>19-20</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>40</strong></td>
+                                        <td>40-42</td>
+                                        <td>48-50</td>
+                                        <td>35-36</td>
+                                        <td>26-27</td>
+                                        <td>20-21</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>42</strong></td>
+                                        <td>42-44</td>
+                                        <td>50-52</td>
+                                        <td>35-36</td>
+                                        <td>27-28</td>
+                                        <td>21-22</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>44</strong></td>
+                                        <td>44-46</td>
+                                        <td>52-54</td>
+                                        <td>36-37</td>
+                                        <td>28-29</td>
+                                        <td>22-23</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- T-Shirts Size Chart -->
+                    <div class="size-chart mb-5">
+                        <h3 class="text-center text-gold mb-4">
+                            <i class="fas fa-tshirt me-3"></i>T-Shirts Size Chart
+                        </h3>
+                        <div class="table-responsive">
+                            <table class="table size-table">
+                                <thead>
+                                    <tr>
+                                        <th>Size</th>
+                                        <th>Chest (inches)</th>
+                                        <th>Length (inches)</th>
+                                        <th>Shoulder (inches)</th>
+                                        <th>Sleeve Length (inches)</th>
+                                    </tr>
+                                </thead>
+                                <tbody >
+                                    <tr>
+                                        <td><strong>S</strong></td>
+                                        <td>36-38</td>
+                                        <td>26-27</td>
+                                        <td>16-17</td>
+                                        <td>7-8</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>M</strong></td>
+                                        <td>38-40</td>
+                                        <td>27-28</td>
+                                        <td>17-18</td>
+                                        <td>8-9</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>L</strong></td>
+                                        <td>40-42</td>
+                                        <td>28-29</td>
+                                        <td>18-19</td>
+                                        <td>9-10</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>XL</strong></td>
+                                        <td>42-44</td>
+                                        <td>29-30</td>
+                                        <td>19-20</td>
+                                        <td>10-11</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>XXL</strong></td>
+                                        <td>44-46</td>
+                                        <td>30-31</td>
+                                        <td>20-21</td>
+                                        <td>11-12</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Measurement Guide Section -->
+    <section class="py-5" style="background: var(--secondary-black);">
+        <div class="container">
+            <h2 class="text-center mb-5 text-white">How to Measure</h2>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="measurement-card">
+                        <div class="measurement-icon">
+                            <i class="fas fa-ruler-horizontal"></i>
+                        </div>
+                        <h5 class="text-gold">Chest</h5>
+                        <p class="text-light">Measure around the fullest part of your chest, keeping the tape horizontal.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="measurement-card">
+                        <div class="measurement-icon">
+                            <i class="fas fa-ruler-vertical"></i>
+                        </div>
+                        <h5 class="text-gold">Waist</h5>
+                        <p class="text-light">Measure around your natural waistline, keeping the tape comfortably loose.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="measurement-card">
+                        <div class="measurement-icon">
+                            <i class="fas fa-arrows-alt-v"></i>
+                        </div>
+                        <h5 class="text-gold">Length</h5>
+                        <p class="text-light">Measure from the base of your neck to where you want the garment to end.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="measurement-card">
+                        <div class="measurement-icon">
+                            <i class="fas fa-arrows-alt-h"></i>
+                        </div>
+                        <h5 class="text-gold">Shoulder</h5>
+                        <p class="text-light">Measure from the edge of one shoulder to the edge of the other shoulder.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Size Tips Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="size-tips">
+                        <h3 class="text-center text-gold mb-4">Size Tips</h3>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="tip-item">
+                                    <h5 class="text-gold"><i class="fas fa-lightbulb me-2"></i>General Tips</h5>
+                                    <ul class="text-light">
+                                        <li>Always measure over light clothing</li>
+                                        <li>Keep the measuring tape snug but not tight</li>
+                                        <li>Measure twice to ensure accuracy</li>
+                                        <li>Consider your preferred fit (slim, regular, loose)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="tip-item">
+                                    <h5 class="text-gold"><i class="fas fa-info-circle me-2"></i>Fit Guide</h5>
+                                    <ul class="text-light">
+                                        <li><strong>Slim Fit:</strong> Tighter, more fitted appearance</li>
+                                        <li><strong>Regular Fit:</strong> Standard, comfortable fit</li>
+                                        <li><strong>Loose Fit:</strong> Relaxed, roomy fit</li>
+                                        <li>When in doubt, size up for comfort</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="text-gold">Dwarkesh Menswear</h5>
+                    <p class="text-light">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        Mendarda, Junagadh, Gujarat, India
+                    </p>
+                    <p class="text-light">
+                        <i class="fas fa-phone me-2"></i>
+                        +91 98765 43210
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5 class="text-gold">Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-gold">
+            <div class="text-center">
+                <p class="text-light mb-0">&copy; 2024 Dwarkesh Menswear. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
